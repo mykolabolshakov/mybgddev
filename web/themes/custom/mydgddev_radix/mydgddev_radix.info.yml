@@ -1,0 +1,35 @@
+name: My BG RADIX theme
+description: A theme based on Radix.
+screenshot: screenshot.png
+core_version_requirement: ^8.7.7 || ^9.0 || ^10
+# version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+'interface translation project': mydgddev_radix
+'interface translation server pattern': 'themes/custom/mydgddev_radix/translations/%language.po'
+
+regions:
+  navbar_branding: Navbar branding
+  navbar_left: Navbar left
+  navbar_right: Navbar right
+  header: Header
+  content: Content
+  page_bottom: Page bottom
+  footer: Footer
+
+libraries:
+  - mydgddev_radix/style
+
+ckeditor_stylesheets:
+  - build/css/main.style.css
+
+components:
+  namespaces:
+    mydgddev_radix: src/components
+
+# Information added by Drupal.org packaging script on 2022-12-15
+version: '5.0.5'
+project: 'radix'
+datestamp: 1671108208

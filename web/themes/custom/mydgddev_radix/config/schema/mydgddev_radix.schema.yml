@@ -1,0 +1,5 @@
+# Schema for the configuration files of the mydgddev_radix theme.
+
+mydgddev_radix.settings:
+  type: theme_settings
+  label: 'mydgddev_radix settings'
