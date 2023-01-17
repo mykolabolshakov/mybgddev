@@ -1,0 +1,94 @@
+uuid: ec9c366e-a48c-46a2-8985-4279267080e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.front.body
+    - field.field.node.front.layout_builder__layout
+    - node.type.front
+    - views.view.advs_slider
+    - views.view.frontpage
+  module:
+    - layout_builder
+    - layout_discovery
+    - search
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          426eebb2-2bf7-46a1-89d7-bdd60a7876f9:
+            uuid: 426eebb2-2bf7-46a1-89d7-bdd60a7876f9
+            region: third
+            configuration:
+              id: search_form_block
+              label: 'Search form'
+              label_display: '0'
+              provider: search
+              context_mapping: {  }
+              page_id: ''
+            weight: 0
+            additional: {  }
+          42a13484-8add-494d-876a-193cdd6e826d:
+            uuid: 42a13484-8add-494d-876a-193cdd6e826d
+            region: second
+            configuration:
+              id: 'views_block:frontpage-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          a8816af0-105d-4472-9213-4d791de5cec4:
+            uuid: a8816af0-105d-4472-9213-4d791de5cec4
+            region: first
+            configuration:
+              id: 'views_block:advs_slider-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Front Views'
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+id: node.front.default
+targetEntityType: node
+bundle: front
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

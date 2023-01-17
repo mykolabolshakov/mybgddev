@@ -1,0 +1,22 @@
+uuid: 9af034ee-0f87-45f0-ac1a-12ebf41785f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mydgddev_radix
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: mydgddev_radix_content
+theme: mydgddev_radix
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

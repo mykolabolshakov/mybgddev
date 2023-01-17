@@ -1,0 +1,22 @@
+uuid: 62f688ed-7ce0-41f6-89ef-1e90943016d4
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mydgddev_radix
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: mydgddev_radix_primary_local_tasks
+theme: mydgddev_radix
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 08f9aeaa-0c93-4664-b4b6-259025d085d2
+langcode: und
+status: true
+dependencies: {  }
+name: spefro
+vid: spefro
+description: 'Description of spefro'
+weight: 9

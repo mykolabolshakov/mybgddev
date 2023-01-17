@@ -1,0 +1,29 @@
+uuid: 47d31af3-eb69-4d7e-87c0-c88e7a9ebef0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_images
+    - media.type.image
+    - node.type.public_advertisement
+id: node.public_advertisement.field_images
+field_name: field_images
+entity_type: node
+bundle: public_advertisement
+label: Images
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: created
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

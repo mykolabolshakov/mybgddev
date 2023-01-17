@@ -1,0 +1,8 @@
+uuid: de7071f2-f6aa-4f9b-9b21-694454154f90
+langcode: und
+status: true
+dependencies: {  }
+name: uagid
+vid: uagid
+description: 'Description of uagid'
+weight: 8

@@ -1,0 +1,10 @@
+uuid: c818c2a2-d2fe-4c27-9c61-f5af564477e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.advs_images_slider
+label: 'ADVs Images SLIDER'
+targetEntityType: node
+cache: true

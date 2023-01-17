@@ -1,0 +1,65 @@
+uuid: d19b38c7-ec35-4c2a-aa78-88143fe4e10c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.advs_images_slider
+    - field.field.node.public_advertisement.body
+    - field.field.node.public_advertisement.field_images
+    - node.type.public_advertisement
+  module:
+    - ds
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  ds:
+    layout:
+      id: ds_1col
+      settings:
+        disable_css: false
+        entity_classes: all_classes
+        classes:
+          layout_class: {  }
+        wrappers:
+          content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      content:
+        - node_title
+        - field_images
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 2
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.public_advertisement.advs_images_slider
+targetEntityType: node
+bundle: public_advertisement
+mode: advs_images_slider
+content:
+  field_images:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  links: true

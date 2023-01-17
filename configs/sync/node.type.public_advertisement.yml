@@ -1,0 +1,17 @@
+uuid: 183fcc56-6c78-4232-b49d-dfbafa813bd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Public Advertisement'
+type: public_advertisement
+description: 'Public Advertisement|Публічне оголошення'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

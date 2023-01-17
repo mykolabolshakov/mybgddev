@@ -1,0 +1,76 @@
+uuid: 5c8bd384-c70e-4a6a-ba92-ad04ded7de2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.front.body
+    - field.field.node.front.layout_builder__layout
+    - node.type.front
+    - views.view.advs_slider
+    - views.view.frontpage
+  module:
+    - layout_builder
+    - search
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_threecol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-50-25
+        components:
+          2c584a22-1269-4420-ae45-73b6dffcb939:
+            uuid: 2c584a22-1269-4420-ae45-73b6dffcb939
+            region: first
+            configuration:
+              id: 'views_block:advs_slider-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          f32431f1-094f-4e43-b667-f7cfde50b3f4:
+            uuid: f32431f1-094f-4e43-b667-f7cfde50b3f4
+            region: second
+            configuration:
+              id: 'views_block:frontpage-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          dea1bfbd-fd15-4daf-a567-5154b9985d9b:
+            uuid: dea1bfbd-fd15-4daf-a567-5154b9985d9b
+            region: third
+            configuration:
+              id: search_form_block
+              label: 'Search form'
+              label_display: '0'
+              provider: search
+              context_mapping: {  }
+              page_id: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.front.full
+targetEntityType: node
+bundle: front
+mode: full
+content: {  }
+hidden:
+  body: true
+  layout_builder__layout: true
+  links: true

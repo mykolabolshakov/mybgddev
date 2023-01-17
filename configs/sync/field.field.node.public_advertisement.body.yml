@@ -1,0 +1,23 @@
+uuid: 9043e7c4-e1da-4aa3-a71c-aae4bc67f86c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.public_advertisement
+  module:
+    - text
+id: node.public_advertisement.body
+field_name: body
+entity_type: node
+bundle: public_advertisement
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
