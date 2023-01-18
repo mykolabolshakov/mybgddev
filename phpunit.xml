@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         bootstrap="web/core/tests/bootstrap.php"
+         verbose="true"
+>
+  <coverage>
+    <include>
+      <directory>web/modules/custom</directory>
+    </include>
+  </coverage>
+  <php>
+    <env name="SIMPLETEST_DB" value="sqlite://localhost//tmp/test.sqlite"/>
+  </php>
+  <testsuites>
+    <testsuite name="draft tests">
+      <directory>./tests/</directory>
+      <directory>./web/modules/custom/**/tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
