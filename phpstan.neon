@@ -22,9 +22,9 @@ parameters:
     - '#Class PHPUnit\\Framework\\TestCase not found#'
     - '#Reflection error: PHPUnit\\Framework\\TestCase not found#'
 
-includes:
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-phpunit/extension.neon
-  - %currentWorkingDirectory%/vendor/mglaman/phpstan-drupal/extension.neon
-  - %currentWorkingDirectory%/vendor/phpstan/phpstan-deprecation-rules/rules.neon
+#includes:
+#  - %currentWorkingDirectory%/vendor/phpstan/phpstan-phpunit/extension.neon
+#  - %currentWorkingDirectory%/vendor/mglaman/phpstan-drupal/extension.neon
+#  - %currentWorkingDirectory%/vendor/phpstan/phpstan-deprecation-rules/rules.neon
 
 
