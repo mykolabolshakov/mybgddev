@@ -1,0 +1,22 @@
+uuid: be87bb1b-2c08-4888-ad20-6eb1474a8866
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mybgddev_radix
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: mybgddev_radix_powered
+theme: mybgddev_radix
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

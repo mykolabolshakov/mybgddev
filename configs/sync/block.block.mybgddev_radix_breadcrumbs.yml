@@ -1,4 +1,4 @@
-uuid: 925fb99b-7207-4ab3-b6fa-26cb591b58ec
+uuid: 767fddee-5eb0-44b0-a051-23d11a6e75ab
 langcode: en
 status: true
 dependencies:
@@ -6,17 +6,19 @@ dependencies:
     - system
   theme:
     - mybgddev_radix
-id: pagetitle
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: mybgddev_radix_breadcrumbs
 theme: mybgddev_radix
 region: content
-weight: -7
+weight: -6
 provider: null
-plugin: page_title_block
+plugin: system_breadcrumb_block
 settings:
-  id: page_title_block
-  label: 'Page title'
+  id: system_breadcrumb_block
+  label: Breadcrumbs
   label_display: '0'
-  provider: core
+  provider: system
 visibility:
   request_path:
     id: request_path

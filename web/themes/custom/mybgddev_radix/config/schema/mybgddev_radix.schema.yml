@@ -1,0 +1,5 @@
+# Schema for the configuration files of the mybgddev_radix theme.
+
+mybgddev_radix.settings:
+  type: theme_settings
+  label: 'mybgddev_radix settings'
