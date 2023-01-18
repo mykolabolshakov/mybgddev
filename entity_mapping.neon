@@ -1,0 +1,19 @@
+parameters:
+	drupal:
+		entityMapping:
+			block:
+				class: Drupal\block\Entity\Block
+				storage: Drupal\Core\Config\Entity\ConfigEntityStorage
+			node:
+				class: Drupal\node\Entity\Node
+				storage: Drupal\node\NodeStorage
+			taxonomy_term:
+				class: Drupal\taxonomy\Entity\Term
+				storage: Drupal\taxonomy\TermStorage
+			user:
+				class: Drupal\user\Entity\User
+				storage: Drupal\user\UserStorage
+            paragraph:
+                    class: Drupal\paragraphs\Entity\Paragraph
+                paragraphs_type:
+                    class: Drupal\paragraphs\Entity\ParagraphsType

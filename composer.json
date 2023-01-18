@@ -32,6 +32,7 @@
         "drupal/radix": "^5.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_slideshow": "^5.0",
+        "drupal/xhprof": "^1.0@beta",
         "drush/drush": "^11.4"
     },
     "conflict": {
@@ -50,6 +51,11 @@
         "sort-packages": true
     },
     "extra": {
+        "phpstan": {
+            "includes": [
+                "entity_mapping.neon"
+            ]
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
