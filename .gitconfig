@@ -1,0 +1,24 @@
+[core]
+  autocrlf = false
+  safecrlf = false
+
+[core]
+  ignorecase = false
+
+[branch]
+  autosetuprebase = always
+
+[color]
+  ui = true
+
+[diff]
+  renames = copies
+
+[alias]
+  a = apply --index
+
+[checkout]
+  defaultRemote = origin
+
+[core]
+  excludesfile = ~/.gitignore
